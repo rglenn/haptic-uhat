@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
+    (drawings 18)
     (tracks 543)
     (zones 0)
     (modules 62)
@@ -2885,6 +2885,9 @@
       (net 4 +3V3))
   )
 
+  (gr_text "OctoPulse v1\n12-10-2019" (at 62.23 34.29) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_line (start 12.5 27.5) (end 12.5 51.5) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 15.5 27.5) (end 12.5 27.5) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 5B55F169))
   (gr_line (start 15.5 24.5) (end 74.5 24.5) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 5B55F01C))
