@@ -73,9 +73,9 @@ Wire Wire Line
 Wire Wire Line
 	1650 5550 600  5550
 Text Label 10750 1550 0    50   ~ 0
-SCL_PI
-Text Label 10750 1650 0    50   ~ 0
 SDA_PI
+Text Label 10750 1650 0    50   ~ 0
+SCL_PI
 Wire Wire Line
 	10750 1650 11100 1650
 Wire Wire Line
@@ -1988,12 +1988,12 @@ $EndComp
 Wire Wire Line
 	12650 5550 12650 5650
 Text Label 13000 6250 2    50   ~ 0
-IP_BTN
+SHDN_BTN
 Wire Wire Line
 	13000 6250 12650 6250
 Connection ~ 12650 6250
 Text Label 10750 1750 0    50   ~ 0
-IP_BTN
+SHDN_BTN
 Wire Wire Line
 	10750 1750 11100 1750
 Wire Wire Line
@@ -2123,4 +2123,86 @@ Wire Wire Line
 Wire Wire Line
 	6500 5750 6500 5650
 Connection ~ 6500 5650
+$Comp
+L dk_Tactile-Switches:B3F-1000 S2
+U 1 1 5DC27493
+P 11250 6150
+F 0 "S2" H 11250 6497 60  0000 C CNN
+F 1 "B3F-1000" H 11250 6391 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_B3F-1xxx" H 11450 6350 60  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 11450 6450 60  0001 L CNN
+F 4 "SW400-ND" H 11450 6550 60  0001 L CNN "Digi-Key_PN"
+F 5 "B3F-1000" H 11450 6650 60  0001 L CNN "MPN"
+F 6 "Switches" H 11450 6750 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 11450 6850 60  0001 L CNN "Family"
+F 8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf" H 11450 6950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/omron-electronics-inc-emc-div/B3F-1000/SW400-ND/33150" H 11450 7050 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 11450 7150 60  0001 L CNN "Description"
+F 11 "Omron Electronics Inc-EMC Div" H 11450 7250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11450 7350 60  0001 L CNN "Status"
+	1    11250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5DC2749D
+P 11550 5800
+F 0 "R22" H 11620 5846 50  0000 L CNN
+F 1 "10K" H 11620 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11480 5800 50  0001 C CNN
+F 3 "~" H 11550 5800 50  0001 C CNN
+	1    11550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5DC274A7
+P 10950 6350
+F 0 "#PWR0105" H 10950 6100 50  0001 C CNN
+F 1 "GND" H 10955 6177 50  0000 C CNN
+F 2 "" H 10950 6350 50  0001 C CNN
+F 3 "" H 10950 6350 50  0001 C CNN
+	1    10950 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 6050 11550 6050
+Wire Wire Line
+	11550 6050 11550 5950
+Wire Wire Line
+	11050 6050 10950 6050
+Wire Wire Line
+	10950 6050 10950 6250
+Wire Wire Line
+	11050 6250 10950 6250
+Connection ~ 10950 6250
+Wire Wire Line
+	10950 6250 10950 6350
+Wire Wire Line
+	11450 6250 11550 6250
+Wire Wire Line
+	11550 6250 11550 6050
+Connection ~ 11550 6050
+Text Label 11900 6250 2    50   ~ 0
+IP_BTN
+Wire Wire Line
+	11900 6250 11550 6250
+Connection ~ 11550 6250
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5DC4B2F7
+P 11550 5550
+F 0 "#PWR0106" H 11550 5400 50  0001 C CNN
+F 1 "+3.3V" H 11565 5723 50  0000 C CNN
+F 2 "" H 11550 5550 50  0001 C CNN
+F 3 "" H 11550 5550 50  0001 C CNN
+	1    11550 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 5550 11550 5650
+Text Label 10750 3250 0    50   ~ 0
+IP_BTN
+Wire Wire Line
+	10750 3250 11100 3250
 $EndSCHEMATC
