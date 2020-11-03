@@ -3,6 +3,15 @@ import board
 import busio
 import adafruit_drv2605
 import adafruit_tca9548a
+from signal import signal, SIGINT
+from sys import exit
+
+drv = []
+
+def handler(signal_received, frame):
+    for i in range(8):
+        drv[i].stop()
+    exit(0)
 
 # Create I2C bus as normal
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -11,12 +20,12 @@ i2c = busio.I2C(board.SCL, board.SDA)
 print("Initializing I2C Mux")
 tca = adafruit_tca9548a.TCA9548A(i2c)
 
-drv = []
-
 for i in range(8):
     print("Initializing driver {}".format(i))
     drv.append(adafruit_drv2605.DRV2605(tca[i]))
     drv[i].use_LRM()
+
+signal(SIGINT, handler)
 
 # Main loop runs forever trying each effect (1-123).
 # See table 11.2 in the datasheet for a list of all the effect names and IDs.
