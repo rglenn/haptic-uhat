@@ -1,0 +1,81 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TP4057_[C12044]
+#
+DEF TP4057_[C12044] U 0 40 Y Y 1 F N
+F0 "U" -1 50 50 H V L BNN
+F1 "TP4057_[C12044]" 49 150 50 H I L BNN
+F2 "lc_lib:SOT-23-6" -1 -600 50 H I L BNN
+F3 "http://www.szlcsc.com/product/details_12599.html" -1 -500 50 H I L BNN
+F4 "��ص�Դ����" 0 0 50 H I C CNN "description"
+F5 "��Ӧ������" -1 -700 50 H I L BNN "ComponentLink1Description"
+F6 "SOT-23-6" -1 -800 50 H I L BNN "Package"
+F7 "LC" -1 -900 50 H I L BNN "Supplier"
+F8 "C12044" -1 -1000 50 H I L BNN "SuppliersPartNumber"
+F9 "" -1 -1100 50 H I L BNN "Notepad"
+F10 "TP4057" 149 50 50 H V L BNN "Comment"
+DRAW
+S 300 -400 1200 0 1 1 0 f
+X CHRG 1 0 -100 300 R 50 50 1 1 P
+X GND 2 0 -200 300 R 50 50 1 1 P
+X BAT 3 0 -300 300 R 50 50 1 1 P
+X VCC 4 1500 -300 300 L 50 50 1 1 P
+X STDBY 5 1500 -200 300 L 50 50 1 1 P
+X PROG 6 1500 -100 300 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TP4056_[C16581]
+#
+DEF TP4056_[C16581] U 0 40 Y Y 1 F N
+F0 "U" -1 50 50 H V L BNN
+F1 "TP4056_[C16581]" 49 150 50 H I L BNN
+F2 "lc_lib:SOP-8_EP_150MIL" -1 -700 50 H I L BNN
+F3 "http://www.szlcsc.com/product/details_17264.html" -1 -600 50 H I L BNN
+F4 "��ص�Դ����" 0 0 50 H I C CNN "description"
+F5 "��Ӧ������" -1 -800 50 H I L BNN "ComponentLink1Description"
+F6 "SOP-8_EP_150mil" -1 -900 50 H I L BNN "Package"
+F7 "LC" -1 -1000 50 H I L BNN "Supplier"
+F8 "C16581" -1 -1100 50 H I L BNN "SuppliersPartNumber"
+F9 "" -1 -1200 50 H I L BNN "Notepad"
+F10 "TP4056" 149 50 50 H V L BNN "Comment"
+DRAW
+S 300 -500 1000 0 1 1 0 f
+X TEMP 1 0 -100 300 R 50 50 1 1 P
+X PROG 2 0 -200 300 R 50 50 1 1 P
+X GND 3 0 -300 300 R 50 50 1 1 P
+X VCC 4 0 -400 300 R 50 50 1 1 P
+X BAT 5 1300 -400 300 L 50 50 1 1 P
+X ~STDBY 6 1300 -300 300 L 50 50 1 1 P
+X ~CHRG 7 1300 -200 300 L 50 50 1 1 P
+X CE 8 1300 -100 300 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TP4054_[C32574]
+#
+DEF TP4054_[C32574] U 0 40 Y Y 1 F N
+F0 "U" -1 50 50 H V L BNN
+F1 "TP4054_[C32574]" 49 150 50 H I L BNN
+F2 "lc_lib:SOT-23-5" -1 -600 50 H I L BNN
+F3 "http://www.szlcsc.com/product/details_33539.html" -1 -500 50 H I L BNN
+F4 "��ص�Դ����" 0 0 50 H I C CNN "description"
+F5 "��Ӧ������" -1 -700 50 H I L BNN "ComponentLink1Description"
+F6 "SOT-23-5" -1 -800 50 H I L BNN "Package"
+F7 "LC" -1 -900 50 H I L BNN "Supplier"
+F8 "C32574" -1 -1000 50 H I L BNN "SuppliersPartNumber"
+F9 "" -1 -1100 50 H I L BNN "Notepad"
+F10 "TP4054" 149 50 50 H V L BNN "Comment"
+DRAW
+S 300 -400 1100 0 1 1 0 f
+X ~GHRG 1 0 -100 300 R 50 50 1 1 P
+X GND 2 0 -200 300 R 50 50 1 1 P
+X BAT 3 0 -300 300 R 50 50 1 1 P
+X VCC 4 1400 -300 300 L 50 50 1 1 P
+X PROG 5 1400 -100 300 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+
+#
+#End Library

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Connector-ML)(type Legacy)(uri ${KIPRJMOD}/symbols/Connector-ML.lib)(options "")(descr ""))
+  (lib (name drv2605l)(type Legacy)(uri ${KIPRJMOD}/drv2605l.lib)(options "")(descr ""))
+  (lib (name tpcharger)(type Legacy)(uri ${KIPRJMOD}/symbols/tpcharger.lib)(options "")(descr ""))
+  (lib (name esp32s2)(type Legacy)(uri ${KIPRJMOD}/symbols/esp32s2.lib)(options "")(descr ""))
+)
