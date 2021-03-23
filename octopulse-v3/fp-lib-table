@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name Connector_Samtec_HLE_SMD-ML)(type KiCad)(uri ${KIPRJMOD}/footprints/Connector_Samtec_HLE_SMD-ML.pretty)(options "")(descr ""))
   (lib (name DRV2603)(type KiCad)(uri ${KIPRJMOD}/footprints/DRV2603.pretty)(options "")(descr ""))
+  (lib (name TC2020RGB-3CJH)(type KiCad)(uri ${KIPRJMOD}/footprints/TC2020RGB-3CJH.pretty)(options "")(descr ""))
 )

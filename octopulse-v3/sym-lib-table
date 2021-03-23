@@ -3,4 +3,5 @@
   (lib (name drv2605l)(type Legacy)(uri ${KIPRJMOD}/drv2605l.lib)(options "")(descr ""))
   (lib (name tpcharger)(type Legacy)(uri ${KIPRJMOD}/symbols/tpcharger.lib)(options "")(descr ""))
   (lib (name esp32s2)(type Legacy)(uri ${KIPRJMOD}/symbols/esp32s2.lib)(options "")(descr ""))
+  (lib (name TC2020RGB-3CJH)(type Legacy)(uri ${KIPRJMOD}/symbols/TC2020RGB-3CJH.lib)(options "")(descr ""))
 )
