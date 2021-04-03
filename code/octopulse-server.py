@@ -33,6 +33,7 @@ class I2CThread(threading.Thread):
             print('I2CThread: Initializing driver {}'.format(i))
             self.drv.append(adafruit_drv2605.DRV2605(self.tca[i]))
             self.drv[i].use_LRM()
+            self.drv[i].library = adafruit_drv2605.LIBRARY_LRA
 
         return
         
